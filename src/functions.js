@@ -18,7 +18,7 @@ const generateHash = async (req, res, next) => {
 
 const generateHashFork = async (req, res, next) => {
   const { value } = req.params;
-  const hashService = fork('./src/heavyWeightStuff.js', {
+  const hashService = fork('./src/heavyWeightStuffFork.js', {
     env: {
       VALUE: value,
     }
